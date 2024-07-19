@@ -1,0 +1,5 @@
+{
+    "BD_PASSWD": 12345,
+    "CHECK_SH": "/home/hahahellooo/airflow/dags/check.sh ",
+    "MY_NAME": "sawyer"
+}
