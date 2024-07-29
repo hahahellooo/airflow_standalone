@@ -8,7 +8,7 @@ from airflow import DAG
 # Operators; we need this to operate!
 from airflow.operators.bash import BashOperator
 from airflow.operators.empty import EmptyOperator
-from airflow.operators.python import PythonOperator
+from airflow.operators.python import PythonOperator, PythonVirtualenvOperator
 with DAG(
     'movie',
     # These args will get passed on to each operator
@@ -53,12 +53,12 @@ with DAG(
         return "Whatever you return gets printed in the logs"
 
     run_this = PythonOperator(task_id="print_the_context",
-                              python_callable=print_context)
+                              python_callable=print_context,
+                              )
 
-    task_get_data = PythonOperator(
-         task_id='get.data',
-        python_callable=get_data 
-    )
+    task_get_data = PythonVirtualenvOperator(task_id="get_data",
+               python_callable=get_data,
+               requirements=["git+https://github.com/hahahellooo/mov.git@0.2/api"],               system_site_packages=False)
 
     task_save_data = BashOperator(
         task_id='save.data',
