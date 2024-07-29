@@ -27,7 +27,7 @@ with DAG(
     # t1, t2 and t3 are examples of tasks created by instantiating operators
     task_check = BashOperator(
          task_id='check.done',
-         bash_command="bash {{ var.value.CHECK_SH }} {{ds_nodash}}"
+         bash_command="bash {{ var.value.CHECK_SH }} ~/data/done/{{ds_nodash}}/_DONE"
 
     )
     task_tocsv = BashOperator(
@@ -37,15 +37,33 @@ with DAG(
             U_PATH=~/data/count/{{ds_nodash}}/count.log
             CSV_PATH=~/data/csv/{{ds_nodash}}
             mkdir -p $CSV_PATH
-            cat ${U_PATH} | awk '{print "{{ds}}," $2 "," $1}' > ${CSV_PATH}/csv.csv
-         """
+            # cat $U_PATH | awk '{print "\\"{{ds}}\\",\\"" $2 "\\",\\"" $1 "\\""}' > ${CSV_FILE}
+            cat $U_PATH | awk '{print "^{{ds}}^,^" $2 "^,^" $1 "^"}' > ${CSV_FILE}
+            echo $CSV_PATH
+
+            """
+    )
+    task_create_table =  BashOperator(
+        task_id="create.table",
+        bash_command="""
+            
+            SQL='{{ var.value.SQL_PATH }}'/create_db_table.sql
+            echo "SQL_PATH=$SQL"
+            MYSQL_PWD='{{ var.value.DB_PASSWD }}' mysql -u root < $SQL
+
+
+
+
+        """
     )
 
     task_totmp = BashOperator(
          task_id='to.tmp',
          bash_command="""
             echo "to.tmp"
-
+            CSV_FILE=~/data/csv/{{ds_nodash}}/csv.csv
+            echo $CSV_FILE
+            bash {{ var.value.SH_HOME }}/csv2mysql.sh $CSV_FILE {{ ds }}
             
          """
     )
@@ -54,7 +72,7 @@ with DAG(
          task_id='to.base',
          bash_command="""
             echo "to.base"
-
+            bash {{ var.value.SH_HOME }}/tmp2base.sh {{ ds }}
          """
     )
 
@@ -62,7 +80,14 @@ with DAG(
          task_id='make.done',
          bash_command="""
 
-            echo "make.done"
+            figlet "make.done.start"
+           
+            DONE_PATH={{ var.value.IMPORT_DONE_PATH }}/{{ ds_nodash }}
+            mkdir -p $DONE_PATH
+            echo "IMPORT_DONE_PATH=$DONE_PATH" 
+            touch $DONE_PATH/_DONE
+
+            figlet "make.done.end"
 
          """
     
@@ -84,7 +109,7 @@ with DAG(
 
     task_start >> task_check
     task_check >> task_tocsv
-    task_tocsv >> task_totmp
+    task_tocsv >> task_create_table >> task_totmp
     task_totmp >> task_tobase
     task_tobase >> task_makedone
     task_makedone >> task_end
