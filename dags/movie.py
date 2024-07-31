@@ -52,17 +52,10 @@ with DAG(
         import os
         home_dir = os.path.expanduser("~")
         path = f"{home_dir}/tmp/test_parquet/load_dt={ds_nodash}"
-
-        #print("=" * 20)
-        #print(f"PATH={path}")
-        #print("=" * 20)
-        #path가 제대로 쓰였는지 확인하기 위해 사용했음 
-        #변경 {{ ds_nodash }} -> {ds_nodash}
         if os.path.exists(path):
-        # path = os.path.join(home_dir, f"tmp/test_parquet/load_dt={ld}")
-            return "rm.dir" # "<task_id>" # rf_dir.task_id 로 해도 동작함
+            return "rm.dir" 
         else:
-            return "get.data", "echo.task" #if를 False로 만들어서 else가 항상 실행되도록 수정한 뒤 airflow 확인
+            return "get.start", "echo.task" 
             
 
 
@@ -76,7 +69,6 @@ with DAG(
         requirements=["git+https://github.com/hahahellooo/mov.git@0.3/api"],
         system_site_packages=False,
         trigger_rule='all_done',
-        #venv_cache_path="/home/hahahellooo/tmp2/airflow_venv/get_data" 캐시삭제했기 때문에 매번 새로운 가상환경이 생긴다. 
     )
     
     save_data = PythonVirtualenvOperator(
@@ -85,7 +77,6 @@ with DAG(
         requirements=["git+https://github.com/hahahellooo/mov.git@0.3/api"],
         system_site_packages=False,
         trigger_rule='one_success',
-        #venv_cache_path="/home/hahahellooo/tmp2/airflow_venv/get_data"
     )
 
     rm_dir = BashOperator(
@@ -105,19 +96,26 @@ with DAG(
     multi_n = EmptyOperator(task_id='multi.n')
     nation_k = EmptyOperator(task_id='nation.k') # 한국영화 외국영화
     nation_f = EmptyOperator(task_id='nation.f')
+   
+    get_start = EmptyOperator(
+            task_id='get.start', 
+            trigger_rule='all_done'
+    )
+    
+    get_end = EmptyOperator(task_id='get.end')
 
-    join_task = BashOperator(
-        task_id='join',
+    throw_err = BashOperator(
+        task_id='throw.err',
         bash_command="exit 1",
         trigger_rule="all_done"
     )
 
     start >> branch_op
-    start >> join_task >> save_data
+    start >> throw_err >> save_data
 
-    branch_op >> rm_dir >> [get_data, multi_y, multi_n, nation_k, nation_f]
-    branch_op >> echo_task >> save_data
-    branch_op >> [get_data, multi_y, multi_n, nation_k, nation_f]
-
-    [get_data, multi_y, multi_n, nation_k, nation_f] >> save_data >> end
+    branch_op >> rm_dir >> get_start
+    branch_op >> echo_task >> get_start 
+    get_start >>  [get_data, multi_y, multi_n, nation_k, nation_f] >> get_end
+   
+    get_end  >> save_data >> end
 
