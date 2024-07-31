@@ -33,7 +33,29 @@ with DAG(
         df = save2df(ds_nodash)
         print(df.head(5))
 
+    def fun_multi_y(ds_nodash, arg1):#독립영화 다양성영화 
+        from mov.api.call import save2df
+        df = save2df(load_dt=ds_nodash, url_param=arg1) 
+        print(df[['movieNm','load_dt']].head(5))
+        
+   # def fun_multi_n(ds_nodash):
+   #     from mov.api.call import save2df
+   #     p = {"multiMovieYn": "N"}
+   #     df = save2df(load_dt=ds_nodash, url_param=p)
+   #     print(df[['movieNm','load_dt']].head(5))
+    
+   # def fun_nation_k(ds_nodash):
+   #     from mov.api.call import save2df
+   #     p = {"repNationCd": "K"}
+   #     df = save2df(load_dt=ds_nodash, url_param=p)
+   #     print(df[['movieNm','load_dt']].head(5))
 
+   # def fun_nation_f(ds_nodash):
+   #     from mov.api.call import save2df
+   #     p = {"repNationCd": "F"}
+   #     df = save2df(load_dt=ds_nodash, url_param=p)
+   #     print(df[['movieNm','load_dt']].head(5))
+    
     def save_data(ds_nodash):
         from mov.api.call import apply_type2df
         df = apply_type2df(load_dt=ds_nodash)
@@ -61,14 +83,14 @@ with DAG(
 
     branch_op = BranchPythonOperator(
         task_id="branch.op",
-        python_callable=branch_fun,
+        python_callable=branch_fun
     )
 
     get_data = PythonVirtualenvOperator(task_id="get.data",
         python_callable=get_data,
         requirements=["git+https://github.com/hahahellooo/mov.git@0.3/api"],
         system_site_packages=False,
-        trigger_rule='all_done',
+        trigger_rule='all_done'
     )
     
     save_data = PythonVirtualenvOperator(
@@ -76,9 +98,41 @@ with DAG(
         python_callable=save_data,
         requirements=["git+https://github.com/hahahellooo/mov.git@0.3/api"],
         system_site_packages=False,
-        trigger_rule='one_success',
+        trigger_rule='one_success'
     )
+    
+    multi_y = PythonVirtualenvOperator(
+        task_id='multi.y',
+        python_callable=fun_multi_y,
+        requirements=["git+https://github.com/hahahellooo/mov.git@0.3/api"],
+        op_kwargs = {'arg1' : {"multiMovieYn": "Y"}},
+        system_site_packages=False
+            ) # 다양성 영화 유무
 
+    multi_n = PythonVirtualenvOperator(
+        task_id='multi.n',
+        python_callable=fun_multi_y,
+        requirements=["git+https://github.com/hahahellooo/mov.git@0.3/api"],
+        op_kwargs = {'arg1' : {"multiMovieYn": "N"}},
+        system_site_packages=False
+    )
+    
+    nation_k = PythonVirtualenvOperator(
+        task_id='nation_k',
+        python_callable=fun_multi_y,
+        requirements=["git+https://github.com/hahahellooo/mov.git@0.3/api"],
+        op_kwargs = {'arg1' : {"repNationCd": "K"}},
+        system_site_packages=False
+    )
+    
+    nation_f = PythonVirtualenvOperator(
+        task_id='nation_f',
+        python_callable=fun_multi_y,
+        requirements=["git+https://github.com/hahahellooo/mov.git@0.3/api"],
+        op_kwargs = {'arg1' : {"repNationCd": "F"}},
+        system_site_packages=False
+    )
+    
     rm_dir = BashOperator(
             task_id='rm.dir',
             bash_command='rm -rf ~/tmp/test_parquet/load_dt={{ ds_nodash }}'
@@ -91,11 +145,6 @@ with DAG(
     
     start = EmptyOperator(task_id='start')
     end = EmptyOperator(task_id='end')
-    
-    multi_y = EmptyOperator(task_id='multi.y') # 다양성 영화 유무
-    multi_n = EmptyOperator(task_id='multi.n')
-    nation_k = EmptyOperator(task_id='nation.k') # 한국영화 외국영화
-    nation_f = EmptyOperator(task_id='nation.f')
    
     get_start = EmptyOperator(
             task_id='get.start', 
