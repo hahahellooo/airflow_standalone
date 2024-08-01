@@ -1,6 +1,5 @@
 from datetime import datetime, timedelta
 from textwrap import dedent
-from pprint import pprint
 
 # The DAG object; we'll need this to instantiate a DAG
 from airflow import DAG
@@ -16,8 +15,9 @@ from airflow.operators.python import (
 
 )
 
+from pprint import pprint as pp
 with DAG(
-    'movie',
+    'movie_summary',
     default_args={
         'depends_on_past': False,
         'retries': 1,
@@ -32,34 +32,71 @@ with DAG(
     tags=['api', 'movie', 'amt'],
 ) as dag:
 
+    REQUIREMENTS=["git+https://github.com/hahahellooo/mov.git@0.3/api"]
 
-    merge_df = EmptyOperator(
-        task_id='merge.df'
+    def gen_empty(*ids):
+        tasks = []
+        for id in ids:
+            task = EmptyOperator(task_id=id)
+            tasks.append(task)
+        return tuple(tasks)
+
+    def gen_vpython(**kw):
+
+        #task = PythonVirtualenvOperator(
+        task = PythonOperator(
+                task_id=kw['id'], #kw['id']로 키값을 넣고 value를 가져옴 
+                python_callable=kw['fun_obj'],
+                #system_site_packages=False,
+                #requirements=REQUIREMENTS,
+                op_kwargs=kw['op_kwargs']
+            )
+        return task 
+
+    def pro_data(**params):
+        print("@" * 33)
+        print(params['task_name'])
+        pp(params)
+        print("@" * 33)
+
+    def pro_data2(task_name, **params):
+        print("@" * 33)
+        print(task_name)
+        pp(params)
+        print("@" * 33) 
+
+    def pro_data3(task_name):
+        print("@" * 33)
+        print(task_name)
+        #print(params) task_name 없을 것으로 예상 
+        print("@" * 33)
+
+    def pro_data4(task_name, ds_nodash, **kwargs):
+        print("@" * 33)
+        print(task_name)
+        print(ds_nodash)
+        pp(kwargs) # 여기는 task_name 없을 것으로 예상, ds_nodash 도 없 ...
+        print("@" * 33)
+
+    start, end = gen_empty('start', 'end')
     
-    )
-    
-    apply_type = EmptyOperator(
-        task_id='apply.type'
+    apply_type = gen_vpython(id ='apply.type',
+                             fun_obj = pro_data,
+                             op_kwargs ={"task_name": "apply_type!!!"}
+                            )
 
-    )
-    
-    de_dup = EmptyOperator(
-        task_id='de_dup'
+    merge_df = gen_vpython(id = 'merge.df',
+                         fun_obj = pro_data,
+                         op_kwargs ={"task_name": "merge_df!!!"}
+                         )
 
-    )
+    de_dup = gen_vpython(id ='de.dup',
+                         fun_obj = pro_data,
+                         op_kwargs ={"task_name": "de_dup!!!"}
+                         )
+    summary_df =  gen_vpython(id ='summar.df',
+                         fun_obj = pro_data,
+                         op_kwargs ={"task_name": "summary_df!!!"}
+                         )
 
-    summary_df = EmptyOperator(
-            task_id='summary.df'
-
-    )
-
-    start = EmptyOperator(
-            task_id='start'
-    )
-    
-    end= EmptyOperator(
-            task_id='end'
-    )
-   
-
-    start >> merge_df >> apply_type >> de_dup >> summary_df >> end
+    start >> apply_type >> merge_df >> de_dup >> summary_df >> end
