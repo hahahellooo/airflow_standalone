@@ -15,7 +15,7 @@ from airflow.operators.python import (
 
 )
 
-from pprint import pprint as pp
+
 with DAG(
     'movie_summary',
     default_args={
@@ -32,7 +32,7 @@ with DAG(
     tags=['api', 'movie', 'amt'],
 ) as dag:
 
-    REQUIREMENTS=["git+https://github.com/hahahellooo/mov.git@0.3/api"]
+    REQUIREMENTS=["git+https://github.com/hahahellooo/mov_agg.git@0.5/agg"]
 
     def gen_empty(*ids):
         tasks = []
@@ -43,12 +43,12 @@ with DAG(
 
     def gen_vpython(**kw):
 
-        #task = PythonVirtualenvOperator(
-        task = PythonOperator(
+        task = PythonVirtualenvOperator(
+        # task = PythonOperator(
                 task_id=kw['id'], #kw['id']로 키값을 넣고 value를 가져옴 
                 python_callable=kw['fun_obj'],
-                #system_site_packages=False,
-                #requirements=REQUIREMENTS,
+                system_site_packages=False,
+                requirements=REQUIREMENTS,
                 op_kwargs=kw['op_kwargs']
             )
         return task 
@@ -56,14 +56,16 @@ with DAG(
     def pro_data(**params):
         print("@" * 33)
         print(params['task_name'])
+        from pprint import pprint as pp
         pp(params)
         print("@" * 33)
 
-    def pro_data2(task_name, **params):
-        print("@" * 33)
-        print(task_name)
-        pp(params)
-        print("@" * 33) 
+    def pro_merge(task_name, **params):
+        load_dt = params['ds_nodash']
+        from mov_agg.u import merge
+        df = merge(load_dt)
+        print("*"*33)
+        print(df)
 
     def pro_data3(task_name):
         print("@" * 33)
@@ -75,6 +77,7 @@ with DAG(
         print("@" * 33)
         print(task_name)
         print(ds_nodash)
+        from pprint import pprint as pp
         pp(kwargs) # 여기는 task_name 없을 것으로 예상, ds_nodash 도 없 ...
         print("@" * 33)
 
@@ -86,17 +89,17 @@ with DAG(
                             )
 
     merge_df = gen_vpython(id = 'merge.df',
-                         fun_obj = pro_data,
+                         fun_obj = pro_merge,
                          op_kwargs ={"task_name": "merge_df!!!"}
                          )
 
     de_dup = gen_vpython(id ='de.dup',
-                         fun_obj = pro_data,
+                         fun_obj = pro_data3,
                          op_kwargs ={"task_name": "de_dup!!!"}
                          )
     summary_df =  gen_vpython(id ='summar.df',
-                         fun_obj = pro_data,
+                         fun_obj = pro_data4,
                          op_kwargs ={"task_name": "summary_df!!!"}
                          )
 
-    start >> apply_type >> merge_df >> de_dup >> summary_df >> end
+    start >> merge_df >> de_dup >> apply_type >> summary_df >> end

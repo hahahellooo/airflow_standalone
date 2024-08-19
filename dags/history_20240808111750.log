@@ -1,0 +1,1863 @@
+
+	\
+"
+"1970-01-01,ls,xyz" >> 19700101/csv.csv
+$SAPRK_HOME/bin/spark-submit simpleapp.py
+$SPARK_HOME/bin/spark-submit simpleapp.py
+'
+../
+../3/9
+./
+./_sudden.sh
+./check.sh
+./goaws.sh
+./rootdir.sh
+./sh.sh
+./sleeptimer.sh
+./ssh.sh
+./st.sh
+./sudden.sh
+./sudeen.sh
+./sv.sh
+./zshrc
+.git
+75.67:~/data/hahahellooo/
+:wq
+:~/data/hahahellooo
+AIRFLOW_VERSION=2.9.3
+AWS=ec2-43-201-37-254.ap-northeast-2.compute.amazonaws.com
+CD ../logs
+CD DAGS
+CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-${PYTHON_VERSION}.txt"
+DATE=$(date +"%Y%m%d %H:%M:%S")
+DATE=$(date +"%Y%m%d")
+MYSQL=PWD='qwer123' mysql -u root < create_db_table.sql
+MYSQL_PWD='qwer123' mysql -u root
+MYSQL_PWD='qwer123' mysql -u root < abc.sql
+MYSQL_PWD='qwer123' mysql -u root < create_db_table.sql
+PS1="$ "
+PYTHON_VERSION="$(python -c 'import sys; print(f"{sys.version_info.major}.{sys.version_info.minor}")')"
+S="20240711 11:38:16,SUDDEN./sudden.sh./sudden.sh"
+SET PASSWORD FOR 'root'@'localhost' = '12345';
+SET PASSWORD FOR 'root'@'localhost' = 'qw123';
+SET PASSWORD FOR 'root'@'localhost' = 'qwer123';
+Switched to a new branch 'main'
+Switched to branch 'main'
+TABULATE_INSTALL=lib-only pip install tabulate
+\
+\\
+air
+airflow
+airflow dags
+airflow dags list
+airflow history_2024071
+airflow standalone
+airflow variables
+airflow variables export
+airflow variables export variables.json
+airflow variables list
+airflow variables list -h
+airflow version
+airs
+airss
+apt-cache search openjdk
+apt-cache search openjdk | 17
+apt-cache search openjdk | grep 17
+awk
+awk '{prin $1 $2}'
+awk '{print $1 $2}'
+bash /home/hahahellooo/airflow/dags/check.sh  20240717
+bash /home/hahahellooo/airflow/dags/check.sh 20240714
+bash /home/hahahellooo/airflow/dags/check.sh 20240715
+bash /home/hahahellooo/airflow/dags/check.sh 20240717
+bash /home/hahahellooo/airflow/sh
+bash /home/hahahellooo/airflow/sh/makedone.sh
+bash /home/hahahellooo/airflow/sh/parquet.sh
+bash /home/hahahellooo/airflow/sh/tmp2base.sh 2024-07-10
+bash csv2mysql.sh
+bash tmp.sh /var/lib/mysql-files/csv.csv
+bin/pyspark
+bin/spark-submit
+bin/zeppelin-daemon.sh restart
+bin/zeppelin-daemon.sh start
+bin/zeppelin-daemon.sh start;tail -f logs/zeppelin--DESKTOP-HPO7GCU.log
+bin/zeppelin-daemon.sh status
+bin/zeppelin-daemon.sh stop
+bin/zepplin-daemon.sh start
+branch checkout -
+branch checkout 0.3/show-pic
+branch checkout d1.0.0/1to4
+branch checkout v1.9.0/BEN
+branch v1.0.0/BEN
+branch v1.9.0/BEN
+c
+call()
+cat .gitconfig
+cat .gitignore | tail -1
+cat .pyproject.toml | grep version
+cat .python-version
+cat .zshrc | tail -n 2
+cat /etc/issue
+cat /home/hahahellooo/airflow/dags/check.sh 
+cat /home/hahahellooo/data/done/20240710/_DONE
+cat /home/hahahellooo/data/done/20240714/_DONE
+cat /home/hahahellooo/data/done/20240715/_DONE
+cat /home/hahahellooo/data/done/20240716/_DONE
+cat /home/hahahellooo/data/done/20240717/_DONE
+cat /root/.my.cnf
+cat 19700101/csv.csv
+cat 20240710/csv.csv
+cat 20240712/csv.csv | tail -n 3 > 20240710/csv.csv
+cat README.md
+cat abc.log
+cat airflow-webserver.pid
+cat count.log
+cat count.log | awk '{print "2024-07-17"," $ 2"," $1}'
+cat count.log | awk '{print "2024-07-17," $ 2 "," $1}' | tail -n 2
+cat count.log | awk '{print "2024-07-17," $ 2"," $1}'
+cat count.log | awk '{print "2024-07-17," $ 2"," $1}' | tail -n 2
+cat count.log | awk '{print "2024-07-17," $2 " " $1}'
+cat count.log | awk '{print "2024-07-17," $2 "," $1}'
+cat count.log | awk '{print "2024-07-17," $2 "," $1}' | tail -n 2
+cat count.log | awk '{print "2024-07-17/" $2 "/" $1}'
+cat count.log | awk '{print $0 "/2024-07-17/" $2 "/" $1}'
+cat count.log | awk '{print $1 $2}'
+cat count.log | awk '{print $1","$2}'
+cat count.log | awk '{print $1}' | tail -n 2
+cat csv.csv
+cat cut.log | sort > sort.log
+cat dat.log
+cat data/2023/01/01/data.log
+cat date.log
+cat err.log | grep SUDDEN > sudden-err.csv
+cat hahahellooo.github.io
+cat hahellooo.log
+cat hahellooo.log | grep SUDDEN > sudden.csv
+cat hahellooo.log | grep SUDDNE > sudden.csv
+cat hahellooo.log | grep SUDDNE > sudden.log
+cat hi.txt
+cat history_20240712163554.log
+cat history_20240712163554.log | cut -d' ' -f1
+cat history_20240712163554.log | cut -d' ' -f1 > cut.log
+cat history_20240712163554.log | cut -d' ' -f1 | sort | uniq -c | sort
+cat history_20240712163554.log | wc -l
+cat index.html
+cat pyproject.toml
+cat pyproject.toml| grep ver
+cat sh.sh
+cat sort.log | uniq -c > count.log
+cat ssh.sh
+cat sudden-err.csv
+cat sudden.csv
+cat sudden.sh
+cat sv.sh
+cat tmp.sh
+cat ~/.ssh/id_rsa_hahahellooo.pub
+cat ~/.zshrc | grep ZSH_THEME
+cat ~/.zshrc | grep ZSH_THEME | grep -v "#" ZSH_THEME="agnoster"
+cat ~/data/count/20240717/count.log
+cat ~/data/csv/20240710/csv.csv
+cat ~/data/sort/20240717/sort.log
+cat ~/data/sort/20240717/sort.log | uniq -c > count.log
+ccd spark
+cd
+cd 
+cd  ../
+cd  key
+cd $AIRFLOW_HOME
+cd $AIRFLOW_HOME/dags
+cd $AIRFLOW_HOME/logs
+cd $SPARK_HOME
+cd $airflow_home
+cd 'load_dt=20150101'
+cd 'load_dt=20150101'\
+cd 'load_dt=20150101\
+cd '~tmp'
+cd '~tmt'
+cd ..
+cd .../
+cd ../
+cd ../../
+cd ../..//
+cd ..//
+cd ../3.12
+cd ../3.9
+cd ../3/9
+cd ../logs
+cd ../python
+cd ../scala-2.13
+cd ./sh.sh
+cd .git
+cd .ssh
+cd /
+cd /etc
+cd 1970-01-01
+cd 19700101
+cd 1t0o4
+cd 1to4
+cd 20240710
+cd 20240717
+cd 20240718
+cd 3.11.9
+cd 3.12
+cd 3.9
+cd Extract
+cd Extract/one_to_four
+cd Load
+cd META-INF
+cd R
+cd Transform
+cd air
+cd airflow
+cd airflow sql
+cd airflow/
+cd airflow/dags
+cd airflow/dags/
+cd airflow/data
+cd airflow/py
+cd airflow/sh
+cd airflow/sql
+cd airflow_dags
+cd airflow_venv
+cd api
+cd app
+cd app/down
+cd app/savehistory
+cd app/spark-3.5.1-bin-hadoop3
+cd app/zeppelin-0.11.1-bin-all
+cd ariflow
+cd banner_hahahellooo
+cd build
+cd cdoe
+cd check.sh
+cd cod
+cd code
+cd code/
+cd code/dags
+cd code/down
+cd code/dwon
+cd code/haha_args_history
+cd code/hahahellooo
+cd code/hahahellooo.github.io
+cd code/hahahellooo_lotto
+cd code/hi_hahahellooo
+cd code/io
+cd code/mmov
+cd code/mov
+cd code/mov_agg
+cd code/my_history
+cd code/note
+cd code/practice_args
+cd code/t2
+cd code/t2/
+cd code/t2/Extract
+cd conf
+cd count
+cd csv
+cd cut
+cd dag_processor_manager
+cd dags
+cd data
+cd data/count/20240712
+cd data/csv
+cd data/done
+cd data/done/import
+cd data/parquet
+cd data/parquet/
+cd date
+cd date=
+cd date=01
+cd date=1
+cd db
+cd dd
+cd done
+cd down
+cd dt=1970-01-01
+cd envs
+cd extract
+cd fits2
+cd get_data
+cd gits2
+cd gitstudy
+cd haha_args_history
+cd haha_history
+cd hahahellooo.github.io
+cd hahahellooo.github.io 
+cd hahahellooo.github.io.b
+cd hahahellooo_cmd
+cd hahahellooo_lotto
+cd hi_hahahellooo
+cd hi_hellooo
+cd history
+cd history.parquet
+cd home
+cd import
+cd import_db.py
+cd interpreter
+cd k
+cd keey
+cd key
+cd lib
+cd load
+cd logs
+cd mah
+cd main
+cd make_parquet.py
+cd mieun
+cd mieun_cmd
+cd mieun_mul
+cd mijoon_cmd
+cd mkdir my-streamlit
+cd month=01
+cd mov
+cd mov_agg
+cd move
+cd movie.py mov_summary
+cd movie.py mov_summary.py
+cd movie_data
+cd my-streamlit
+cd my_history
+cd my_history/src/my_history
+cd mysql
+cd note
+cd one_to_four
+cd parque
+cd parqueet
+cd parquet
+cd parquet_history
+cd partition_parquet
+cd pd
+cd prac_pd
+cd pracc
+cd practice_args
+cd py
+cd pyspark
+cd python
+cd python3.11
+cd pyver
+cd sakila
+cd savehistory
+cd savehistroy
+cd scala-2.1
+cd scala-2.11
+cd scala-2.12
+cd scala-2.13
+cd sh
+cd sh.sh
+cd site-packages
+cd spar
+cd spark
+cd spark-3.5.1-bin-hadoop3
+cd sparkpartition
+cd spyspark
+cd sql
+cd src
+cd src/
+cd src/1to4
+cd src/haha_args_history
+cd src/haha_args_history/db
+cd src/hi_hahahellooo
+cd src/mov
+cd src/my_history
+cd src/my_history/
+cd src/one_to_four/
+cd src/team_plus
+cd sss_
+cd sudden.sh
+cd t2
+cd t_plus
+cd team_plus
+cd test
+cd test_db
+cd test_parquet
+cd test_pyenv
+cd testcount
+cd tests
+cd tmo
+cd tmp
+cd tmp.count
+cd tmp/
+cd tmp/count
+cd tmp/down
+cd tmp/down/
+cd tmp/gits2
+cd tmp/hahahellooo.github.io
+cd tmp/history_log
+cd tmp/sparkpartition
+cd tmp/test_parquet
+cd tmp/test_pyenv/
+cd tmp2
+cd tmpw
+cd ts
+cd venv-13fe7195
+cd venv-5790ba13
+cd venv-f8b911a1
+cd year=2022
+cd zeppelin
+cd zeppelin-0.11.1-bin-all
+cd ~
+cd ~/.pyenv/versions
+cd ~/.ssh
+cd ~/20240717
+cd ~/app
+cd ~/app/savehistory
+cd ~/app/zeppelin-0.11.1-bin-all
+cd ~/code
+cd ~/code/my_history
+cd ~/data/count/20240717/
+cd ~/data/done/import
+cd ~/sakila
+cd ~/tmp
+cd../
+cdd tmp
+chmod 400 sudden.sh
+chmod 600 samdulko.pem
+chmod 755 rootdir.sh
+chmod 755 sh.sh
+chmod 755 sleeptimer.sh
+chmod 755 ssh.sh
+chmod 755 sudden.sh
+chmod 755 sv.sh
+clear
+cls
+cnt_
+cnt_ 2
+cnt_ a
+code
+cp
+cp -rf 1970-01-01 1980-01-01
+cp -rf 19700101 19800101
+cp -rf load_dt=20150101 ~/tmp/sparkdata
+cp -rf spark ~/tmp/
+cp ../../../mah/src/mah/cli.py .
+cp ../hahahellooo.github.io.b/* .
+cp .zshrc .zshrc.240711.1
+cp /home/hahahellooo/code/mah/src/mah/cli.py .
+cp __init__.py api
+cp a.html b.html
+cp check.sh makedone.sh
+cp create_db_table.sql temp2base.sql
+cp csv.csv /var/lib/mysql-files/
+cp csv2mysql csv2mysql_
+cp csv2mysql.sh csv2parquet.sh
+cp csv2mysql.sh tmp2mysql.sh
+cp helloworld.py simple_bash.py
+cp history_*.log tmp/history_log
+cp history_20230712*.log 20240712
+cp history_20240712*.log 20240712
+cp history_20240712163554.log tmp/count
+cp import_db.py make_parquet.py
+cp import_db.py movie.py
+cp improt_db.py make_parquet.py
+cp kia.html hyundai.html
+cp movie.py mov_summary.py
+cp movie.py pyspark_movie.py
+cp sudden.log /var/lib/mysql-files/
+cp test_cli.py test_db.py
+cp test_clli.py test_db.py
+cp tmp.sh tmp.sh.b
+cp zeppelin-site.xml.template zeppelin-site.xml
+cp ~/.oh-my-zsh/themes/agnoster.zsh-them 
+cp ~/.zshrc ~/.zshrc.b
+cp ~/data/csv/20240717/csv.csv /var/lib/mysql-files/csv.csv
+cp ~/key/err.log.gz .
+crontab
+crontab -e
+crontab -l
+crontab -l | tail -n 1
+curl -sSL https://pdm-project.org/install-pdm.py | python3 -
+curl https://pyenv.run | bash
+d airflow
+dags
+data
+data;wc -l cut.log
+date
+date +"%Y"
+date +"%Y%m%d"
+date +"%d"
+date +"%m"
+date;sleep 1;date
+date;sleep 2;date;sleep 2;date
+date=01
+ddd
+deactivate
+dls
+dpkg -l | grep mysql
+ds main
+du -skh
+du -skh *
+du -skh .venv
+du -skhh *
+echo
+echo "# hahahellooo.github.io" >> README.md
+echo "# savehistory" > README.md
+echo "1970-01-01,ls,xyz" >> 19700101/csv.csv
+echo "ABC"
+echo "abc" > abc.log
+echo "hi" > hi.txt
+echo "hi2" >> hi.txt
+echo "hi3" >> hi.txt
+echo "hi3" >>> hi.txt
+echo "root dir"
+echo $?
+echo $AIRFLOW_HOME
+echo $AIRFLOW_VERSION=2.9.3
+echo $AWS
+echo $CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-${PYTHON_VERSION}.txt"
+echo $DATE
+echo $JAVA_HOME
+echo $PYTHON_VERSION="$(python -c 'import sys; print(f"{sys.version_info.major}.{sys.version_info.minor}")')"
+echo $SPARK_HOME
+echo $airfow_home
+echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo DATE
+eval "$(ssh-agent -s)"
+exit
+exit()
+export MOVIE_API_KEY="1234"
+export MOVIE_API_KEY="abcdef"
+export MOVIE_API_KEY="dfsdffsfsd"
+figlet
+figlet SUDDEN
+figlet hi
+fine . -name venv-5790ba13 -d
+ggit add .
+gi checkout main
+git
+git  checkout main
+git  sh.sh
+git --commend
+git --help
+git --version
+git .
+git add  . 
+git add .
+git add . 
+git add README.md
+git add hi.txt
+git add index.html
+git add.
+git baranch
+git branch
+git branch 
+git branch -
+git branch -M main
+git branch -a
+git branch -m
+git branch -m main
+git branch -r
+git branch 0.1.0/simple
+git branch 0.2.0/args
+git branch 0.2.0/publish
+git branch 0.2.1/args
+git branch 0.2/api
+git branch 0.2/refac
+git branch 0.3/api
+git branch 0.3/show-pic
+git branch 0.5/agg
+git branch 0.7.0/first-fucntion
+git branch 0.8.0
+git branch 0.8.0/hello
+git branch 0724/movie
+git branch 240719/2CSV
+git branch 240719/2mysql
+git branch 240724/movie
+git branch 240726/movie
+git branch 240731/aggmovie
+git branch 240801/movie
+git branch 3.0.0/SUDDEN
+git branch TEST
+git branch abc
+git branch checkout -
+git branch checkout v1.9.0/BEN
+git branch d1.0.0/1to4
+git branch d2.0.0/parquet
+git branch dev/d1.0.0
+git branch dev/d2.0.0
+git branch dev/d3.0.0
+git branch fix/0.2.2
+git branch fix/6
+git branch fix/6/3.0.1
+git branch list
+git branch main  
+git branch mov_summary
+git branch release/d1.0.0
+git branch release/d2.0.0
+git branch release/d3.0.0
+git branch v0.2.0/first-publish
+git branch v1.4.0/KIA
+git branch v1.5.0/HYUNDAI
+git branch v1.6.0/posh
+git branch v1.7.0/MACLAREN
+git branch v1.8.0/ROYCE
+git branch v1.9.0/BEN
+git branch v2.1.0/a
+git branch v2.2.0/b
+git ccommi -m "v0.2.2"
+git checkour fix/6
+git checkout
+git checkout 
+git checkout -
+git checkout -b test2
+git checkout -b v1.4.0/KIA
+git checkout -t origin/0.2.0/args
+git checkout 0.1.0/simple
+git checkout 0.2.0/args
+git checkout 0.2.0/publish
+git checkout 0.2.1/args
+git checkout 0.2/api
+git checkout 0.2/apoi
+git checkout 0.2/refac
+git checkout 0.3/api
+git checkout 0.3/show-pic
+git checkout 0.5/agg
+git checkout 0.7.0/first-fucntion
+git checkout 0724/movie
+git checkout 240719/2CSV
+git checkout 240719/2mysql
+git checkout 240724/movie
+git checkout 240726/movie
+git checkout 240731/aggmovie
+git checkout 240801/movie
+git checkout 3.0.0/SUDDEN
+git checkout TEST
+git checkout abc
+git checkout d1.0.0/1to4
+git checkout d1.0.0/20240802hotfix
+git checkout d2.0.0/parquet
+git checkout d2.0.0/parquet 
+git checkout d3.0.0/merge
+git checkout d3.0.0/tabulate
+git checkout dev/d1.0.0
+git checkout dev/d2.0.0
+git checkout dev/d3.0.0
+git checkout fix/0.2.2
+git checkout fix/6
+git checkout fix/6/3.0/1
+git checkout main
+git checkout mov_summary
+git checkout release/d1.0.0
+git checkout release/d2.0.0
+git checkout release/d3.0.0
+git checkout v0.2.0/first-publish
+git checkout v1.4.0/KIA
+git checkout v1.5.0/HYUNDAI
+git checkout v1.6.0/posh
+git checkout v1.7.0/MACLAREN
+git checkout v1.8.0/ROYCE
+git checkout v1.9.0/BEN
+git checkout v2.1.0/a
+git checkout v2.2.0//b
+git checkout v2.2.0/b
+git checkouut 0.5/agg
+git checkput fix/6/3.0.1
+git checkput v1.4.0/KIA
+git chekcout -
+git clone git@github.com:DE32-Team-Two/airflow_dags.git
+git clone git@github.com:hahahellooo/haha_args_history.git
+git clone git@github.com:hahahellooo/hahahellooo.github.io.git
+git clone git@github.com:hahahellooo/savehistory.git
+git clone https://github.com/DE32-Team-Two/Extract.git
+git clone https://github.com/DE32-Team-Two/Load.git
+git clone https://github.com/DE32-Team-Two/Transform.git
+git clone https://github.com/Kimwonjoon/mijoon_cmd.git
+git clone https://github.com/dMario24/mah.git
+git clone https://github.com/datacharmer/test_db.git
+git clone https://github.com/hahahellooo/banner_hahahellooo.git
+git clone https://github.com/hahahellooo/hahahellooo.github.io.git
+git clone https://github.com/samdulshopmovie/movie_data.git
+git commit
+git commit  -m "db"
+git commit - "show-lotto"
+git commit --amend
+git commit --ammend
+git commit -a
+git commit -ammend
+git commit -m
+git commit -m  "add tool"
+git commit -m  "init"
+git commit -m ""
+git commit -m ".venv"
+git commit -m "0.2"
+git commit -m "0.2.0"
+git commit -m "0.2.1"
+git commit -m "0.2.2"
+git commit -m "0.2.3"
+git commit -m "0.2.4"
+git commit -m "0.2.5"
+git commit -m "0.3.0"
+git commit -m "0.3.1"
+git commit -m "0.4.0"
+git commit -m "0.7.0/first-fucntion"
+git commit -m "1 deploy"
+git commit -m "20240730"
+git commit -m "240801/movie"
+git commit -m "2tmp"
+git commit -m "3.9"
+git commit -m "3ì´ƒ¨íƒ¹ƒµìƒ½¸"
+git commit -m "AAAA"
+git commit -m "MACLAREN"
+git commit -m "The truth value of a DataFrame is ambiguous"
+git commit -m "a"
+git commit -m "abc"
+git commit -m "add README#5"
+git commit -m "add RM"
+git commit -m "add b"
+git commit -m "add branch"
+git commit -m "add dev test"
+git commit -m "add file"
+git commit -m "add fun"
+git commit -m "add github url"
+git commit -m "add giti"
+git commit -m "add hello"
+git commit -m "add html"
+git commit -m "add ic_b"
+git commit -m "add import db"
+git commit -m "add index.html"
+git commit -m "add key error guide" 
+git commit -m "add key setting"
+git commit -m "add line"
+git commit -m "add lotto"
+git commit -m "add pdm install"
+git commit -m "add rm"
+git commit -m "add test lib"
+git commit -m "add test"
+git commit -m "add url param"
+git commit -m "add urls"
+git commit -m "add"
+git commit -m "airflow readme add"
+git commit -m "banner.py"
+git commit -m "base_url"
+git commit -m "change dt format"
+git commit -m "change key setting"
+git commit -m "change publish key"
+git commit -m "change toml"
+git commit -m "change ver"
+git commit -m "change"
+git commit -m "cli"
+git commit -m "cmd"
+git commit -m "create R.md"
+git commit -m "d"
+git commit -m "del data"
+git commit -m "del data\
+git commit -m "del"
+git commit -m "del\
+git commit -m "done"
+git commit -m "echo"
+git commit -m "error"
+git commit -m "export variables"
+git commit -m "first commit"
+git commit -m "fix date"
+git commit -m "fix url2"
+git commit -m "fix"
+git commit -m "function reuse"
+git commit -m "git  -> install"
+git commit -m "git add"
+git commit -m "hw success"
+git commit -m "ing"
+git commit -m "init"
+git commit -m "k"
+git commit -m "lotto image"
+git commit -m "lotto"
+git commit -m "lotto_"
+git commit -m "mieun_add"
+git commit -m "mieun_plus"
+git commit -m "mmmm"
+git commit -m "mod"
+git commit -m "modi readme"
+git commit -m "modified"
+git commit -m "onetofour"
+git commit -m "organize pip line"
+git commit -m "oì¶ƒ´ê°€"
+git commit -m "pdm init"
+git commit -m "pdm install"
+git commit -m "pic lotto"
+git commit -m "pic"
+git commit -m "ping"
+git commit -m "plus"
+git commit -m "practice 10m pandas"
+git commit -m "print url"
+git commit -m "projectscripts"
+git commit -m "publish"
+git commit -m "push"
+git commit -m "pytest"
+git commit -m "python op"
+git commit -m "readme ë³€ê²½"
+git commit -m "return2origin"
+git commit -m "run script"
+git commit -m "s"
+git commit -m "show-lotto"
+git commit -m "sss_add"
+git commit -m "success pytest"
+git commit -m "success"
+git commit -m "sys"
+git commit -m "t_plus"
+git commit -m "tesk ok"
+git commit -m "test False"
+git commit -m "test ok"
+git commit -m "test ok:\
+git commit -m "test"
+git commit -m "top10"
+git commit -m "up ver"
+git commit -m "up version"
+git commit -m "url fix"
+git commit -m "usage ë³€ê²½"
+git commit -m "v0.2.1"
+git commit -m "v0.2.2"
+git commit -m "v0.2.3"
+git commit -m "v1.0.0"
+git commit -m "ê°€ìƒ¦ƒ­->ë°ƒ¼ì§ƒ¤"
+git commit -m "ê¸ƒ©ë°ƒ¼ì§ƒ¤ ë°©ìƒ¶´ ê¸°ëƒª¥"
+git commit -m "ê¸°ëƒª¥ ë²ƒ´ìƒ¼ƒ¤ë¥¼ ë²ƒ·ìƒ¶´ë‚ƒ¸ë©´ ì‚¬ìƒº©ë²ƒµìƒ½ƒ¤ ì¶ƒ¼ëƒ€¥"
+git commit -m "ë‚ƒ€ì§ƒ¼"
+git commit -m "ëƒƒ¼ê³ƒ€ ìƒ¨ƒ¸ìƒ€ƒµ"
+git commit -m "ëƒƒ¼ê³ƒ€"
+git commit -m "ëƒ¤ìƒª¤ëƒƒ¼ìƒ½´ìƒª¤"
+git commit -m "ì‚­ìƒ€ƒ¼ ì¶ƒ´ê°€"
+git commit -m "ìƒ¤¤ëªƒ¥ ì¶ƒ´ê°€"
+git commit -m "ìƒ¨ƒ¸ìƒ€ƒµ"
+git commit -m "ìƒ¨ƒ¸ìƒ€ƒµíƒ¶ƒ¨ãƒ¥ƒ¥ë¸ƒ¼ëƒ«¤"
+git commit -m "ìƒ¨ƒ¸ìƒ€ƒµíƒ¶ƒ¨ìƒªµëƒ«ƒ¨ëƒ«¤."
+git commit -m "ì½ƒ´ëƒ³ƒ¼ ìƒ¾ƒ±ìƒ¤± ìƒ¹ƒ¤ë£ƒ¬"
+git commit -m "íƒ¯¬ë¥´ìƒ©ƒ°"
+git commit -m 'cnt'
+git commit -n "0.2.5"
+git commit-m "t_plus"
+git config --global core.compression 0
+git config --global core.editor "vim"
+git config --global init.defaultBranch main
+git config --global user.email "hahahello777@gmail.com"
+git config --global user.name "hahahellooo"
+git config pull.rebase false
+git init
+git log
+git merge fix/0.2.2
+git publish
+git puch
+git pull
+git push
+git push --set-upstream origin
+git push --set-upstream origin 0.2.0/args
+git push --set-upstream origin 0.2.0/publish
+git push --set-upstream origin 0.2/api
+git push --set-upstream origin 0.3/api
+git push --set-upstream origin 0.3/show-pic
+git push --set-upstream origin 0.5/agg
+git push --set-upstream origin 0.7.0/first-fucntion
+git push --set-upstream origin 240719/2CSV
+git push --set-upstream origin 240719/2mysql
+git push --set-upstream origin 240724/movie
+git push --set-upstream origin 240726/movie
+git push --set-upstream origin 240731/aggmovie
+git push --set-upstream origin 240801/movie
+git push --set-upstream origin 3.0.0/SUDDEN
+git push --set-upstream origin abc
+git push --set-upstream origin d1.0.0/1to4
+git push --set-upstream origin d2.0.0/parquet
+git push --set-upstream origin dev/d2.0.0
+git push --set-upstream origin dev/d3.0.0
+git push --set-upstream origin fix/0.2.2
+git push --set-upstream origin fix/6
+git push --set-upstream origin main
+git push --set-upstream origin v0.2.0/first-publish
+git push --set-upstream origin v1.4.0/KIA
+git push --set-upstream origin v1.5.0/HYUNDAI
+git push --set-upstream origin v1.6.0/posh
+git push --set-upstream origin v1.7.0/MACLAREN
+git push --set-upstream origin v1.8.0/ROYCE
+git push --set-upstream origin v1.9.0/BEN
+git push --set-upstream origin v2.2.0/b
+git push -u origin main
+git remote 
+git remote -v
+git remote add git@github.com:hahahellooo
+git remote add https://github.com/hahahellooo/hahahellooo.github.io.git
+git remote add origin git@github.com:DE32-Team-Two/Extract_1to4.git
+git remote add origin git@github.com:hahahellooo/0724-movie.git
+git remote add origin git@github.com:hahahellooo/240724-movie.git
+git remote add origin git@github.com:hahahellooo/240726-movie.git
+git remote add origin git@github.com:hahahellooo/airflow_standalone.git
+git remote add origin git@github.com:hahahellooo/banner_hahahellooo.git
+git remote add origin git@github.com:hahahellooo/cmd.git
+git remote add origin git@github.com:hahahellooo/cnt.git
+git remote add origin git@github.com:hahahellooo/dd.git
+git remote add origin git@github.com:hahahellooo/haha_args_history.git
+git remote add origin git@github.com:hahahellooo/hahahellooo.github.io.git
+git remote add origin git@github.com:hahahellooo/hahahellooo_lotto.git
+git remote add origin git@github.com:hahahellooo/mieun.git
+git remote add origin git@github.com:hahahellooo/mieun_mul.git
+git remote add origin git@github.com:hahahellooo/mov.git
+git remote add origin git@github.com:hahahellooo/mov_agg.git
+git remote add origin git@github.com:hahahellooo/pdm.lock.git
+git remote add origin git@github.com:hahahellooo/prac_pd.git
+git remote add origin git@github.com:hahahellooo/savehistory.git
+git remote add origin git@github.com:hahahellooo/sss.git
+git remote add origin git@github.com:hahahellooo/t_plus.git
+git remote add origin git@github.com:hahahellooo/t_plus_.git
+git remote add origin git@github.com:hahahellooo/team_plus.git
+git remote add origin hahahellooo/git@github.com:hahahellooo
+git restore .
+git rm  hahahellooo.github.io
+git rm --cached hahahellooo.github.io
+git rm -f --cached hahahellooo.github.io
+git rm hahahellooo.github.io
+git starus
+git status
+git staus
+git ull
+grep -r "hahahellooo" .
+grep -r "hahahellooo" ./*
+grep -r "hahahellooo" ./data
+grep -r "hahahellooo" ./data/2023/
+gzip -d err.log.gz
+gzip -d hahellooo.log.gz
+gzip hahahellooo.log
+haha-history
+haha-history 1
+haha-history a
+haha-history aws
+haha-history sh
+haha-l
+hahahello-banner
+hahahellooo
+hahahellooo-banner
+hahahellooo-lotto
+hahahellooo-pic
+hahahellooo_cmd
+hahahellooo_lotto
+hello
+hi
+hi()
+hi-hahahellooo
+hi-l
+hi_hahahellooo
+hi_l
+hisotyr
+history
+history | cut -d' ' -f4-
+history | cut -d' ' -f4- | sort
+history | cut -d' ' -f4- | sort | uniq
+history | grep "airflow s"
+history | grep "airflow s\
+history | grep mysql
+history | grep pip
+history | grep ssh
+htop
+import numpy as np
+in -s zeppelin-0.11.1-bin-all zeppelin
+install crontab
+ipi install .
+javac
+jps
+jupyter notebook
+kgit push
+kill 10525
+kill 10528
+kill 11878
+kill 11938 11936  11940
+kill 2245
+kill 2296
+kill 2298
+kill 2299
+kill 2301
+kill 41135
+ks
+l
+la
+libbz2-dev libreadline-dev libsqlite3-dev curl git \\
+libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+list
+ll
+lls
+ln -s savehistory savehistory~
+ln -s tmp/sleeptimer.sh st.sh
+ln -s zeppelin-0.11.1-bin-all zeppelin
+ln -s ~/code/savehistroy savehistory
+ln -s ~/code/savehistroy/sv.sh sv.sh
+ln -s ~code/savehistory savehistory_
+lotto
+lotto()
+ls
+ls 
+ls - l
+ls -a
+ls -a .venv
+ls -al
+ls -al .git
+ls -l
+ls -l .venv
+ls -l /bin/jps
+ls -l /etc/alternatives/java
+ls -l /home/hahahellooo/app/spark-3.5.1-bin-hadoop3
+ls -l /home/hahahellooo/tmp/test_parquet/load_dt=20120101
+ls -l /user/bin/java
+ls -l /usr/bin/java
+ls -l _DONE
+ls -l rootdir.sh
+ls -l st.sh
+ls -l sudden.sh
+ls -l tmp/sleeptimer.sh
+ls -l ~/tmp/test_parquet
+ls -la
+ls -lh hahahellooo.log
+ls -ll
+ls -ltr
+ls -ltr | tail -n 3
+ls .venv
+ls /var/lib/mysql-files/csv.csv
+ls src/mov/api/call.py
+ls ven*
+ls-l
+ls. venv
+lss
+man uniq
+me-history -s 3
+me_history
+mieun
+mieun-p
+mieun_mul
+mieun_p
+mkdir -p 20240710
+mkdir -p a/b/c/d
+mkdir -p data/2021/01/01
+mkdir -p data/2022/01/01
+mkdir -p data/2023/01/01
+mkdir -p data/2024/01/01
+mkdir -p make_parquet.py
+mkdir -p parquet
+mkdir -p pd
+mkdir -p py
+mkdir -p sh
+mkdir -p tmp/count
+mkdir -p tmp/history_log
+mkdir -p ~/code/my_history
+mkdir -p ~/tmp/down
+mkdir -p ~/tmp/sparkdata/
+mkdir ./src/mov/api
+mkdir /src/mov/api
+mkdir 1970-01-01
+mkdir 197001001;echo "1970-01-01,pwd,1" >> 19700101/csv.csv
+mkdir 19700101;echo "1970-01-01,pwd,1" >> 19700101/csv.csv
+mkdir 1to4
+mkdir 20240710
+mkdir 20240712
+mkdir 20240717
+mkdir 3.12
+mkdir 3.9
+mkdir Transform
+mkdir _sudden.sh
+mkdir a
+mkdir a/b
+mkdir a/b/c
+mkdir airflow_dags
+mkdir api
+mkdir app
+mkdir b
+mkdir banner_hahahellooo
+mkdir bin
+mkdir c
+mkdir dags
+mkdir db
+mkdir dd
+mkdir done
+mkdir down
+mkdir gits2
+mkdir gitstudy
+mkdir haha_args_history
+mkdir haha_history
+mkdir hahahellooo.github.io
+mkdir hahahellooo_cmd
+mkdir hahahellooo_lotto
+mkdir hi_hahahellooo
+mkdir history
+mkdir hql
+mkdir log
+mkdir make_parquet.py
+mkdir mieun
+mkdir mieun_cmd
+mkdir mieun_mul
+mkdir mijoon_cmd
+mkdir mov
+mkdir mov_agg
+mkdir my-streamlit
+mkdir my_history
+mkdir note
+mkdir one_to_four
+mkdir parquet
+mkdir parquet_history
+mkdir prac_pd
+mkdir pracc
+mkdir practice_args
+mkdir pyver
+mkdir savehistory
+mkdir savehistroy
+mkdir sh
+mkdir spyspark
+mkdir sql
+mkdir src
+mkdir src/haha_args_history/db
+mkdir src/practice_args/db
+mkdir sss_
+mkdir t2
+mkdir t_plus
+mkdir team_plus
+mkdir test_pyenv
+mkdir testcount
+mkdir ~/.ssh
+mkdir ~/data
+mkidr 3.12
+mov-ping
+mv *.log tmp
+mv ../t_plus.py src/team_plus/
+mv 1970-01-01 ~/csv/19700101
+mv _1to4_.py call.py
+mv dd team_plus
+mv first.sh tmp
+mv haha_args_history banner_hahahellooo_b
+mv hahahellooo.github.io hahahellooo.github.io.b
+mv key/* .
+mv savehistory tmp/
+mv spark-3.5.1-bin-hadoop3 ~/app
+mv src/t_plus/t_plus.py ../
+mv st.sh tmp
+mv test.py test_call.py
+mv tmp2mysql.sh tmp2base.sh
+mv zeppelin-0.11.1-bin-all ~/app
+mv zeppelin-0.11.1-bin-all ~/app/
+my-hisroty -s
+my-hisroty -s 1
+my-history
+my-history -c 10
+my-history -c 10 -v abc
+my-history -h
+my-history -r 1
+my-history -s 1
+my-history -s 2
+my-history -s aaa
+my-history -s aaaa
+my-history -s l
+my-history -s ls
+my-history -t 10
+my-history -t 10 -d 2017-07-17
+my-history -t 10 -d 2024-07-17
+my-history -t 10 -d aaaa
+my-history -t 10 -d aldla
+my-history -t 3 -d 2017-07-17 -p
+my-history -t 3 -d 2024-07-17 -p
+my-history a
+my-history abc
+my-history abc -c 10 -v
+my_history -s 3
+mysql -u root -p
+mysql -u root -p < employees.sql
+mysql -u root -p < employees_partitioned.sql
+mysql -u root -p < sakila-mv-data.sql
+mysql -u root -p < sakila-mv-schema.sql
+nib
+o
+p
+p()
+pandas
+pdm
+pdm add 
+pdm add  pandas
+pdm add -dG test pytest
+pdm add -dG test pytest pytest-cov
+pdm add calendar
+pdm add calender
+pdm add hahahellooo_cmd
+pdm add mieun
+pdm add mieun_mul
+pdm add numpy
+pdm add pandas
+pdm add pyarrow
+pdm add pyenv
+pdm add pyfiglet
+pdm add pytest
+pdm add pytest pytest-cov
+pdm add pytest pytest-cov pyfiglet
+pdm add pytest-cov pandas pyfiglet
+pdm add request
+pdm add requests
+pdm add venv
+pdm ctest
+pdm giti
+pdm gitinstall
+pdm init
+pdm install
+pdm install 
+pdm install .
+pdm install pandas
+pdm install pyarrow
+pdm install pytest
+pdm install pytest pytest-cov
+pdm install.
+pdm list
+pdm publish
+pdm push
+pdm remove pyenv
+pdm self update
+pdm stest
+pdm test
+pdm venv create
+pdm venv creeate
+pdm venv list
+pdm venvoff
+ping
+pip -I install git+https://github.com/hahahellooo/mov.git@fix/0.2.2
+pip instal .
+pip install
+pip install 
+pip install  pyarrow
+pip install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"
+pip install --upgrade pip
+pip install --upgrade virtualenv
+pip install -I git+https://github.com/hahahellooo/mov.git@fix/0.2.2
+pip install -I install git+https://github.com/hahahellooo/mov.git@fix/0.2.2
+pip install .
+pip install .'
+pip install ./
+pip install /
+pip install banner_hahahellooo==0.3.1
+pip install banner_minju210
+pip install git+https://github.com/hahahellooo/haha_args_history.git
+pip install git+https://github.com/hahahellooo/haha_args_history.git/haha_args_history.git
+pip install git+https://github.com/hahahellooo/haha_args_history.git/haha_args_history.git@0.2.0/args
+pip install git+https://github.com/hahahellooo/haha_args_history.git@0.2.0/args
+pip install git+https://github.com/hahahellooo/mov.git@0.2/api
+pip install git+https://github.com/hahahellooo/mov.git@fix/0.2.2
+pip install git@github.com:hahahellooo/haha_args_history.git
+pip install hahahellooo_cmd
+pip install hahahellooo_lotto
+pip install hi_baechu805
+pip install hi_hahahellooo
+pip install hi_hahahellooo==0.7.0
+pip install hi_jeong
+pip install hi_lsiwh37249
+pip install matplotlib
+pip install mieun
+pip install mieun_mul
+pip install mijoon_cmd
+pip install mijoon_cmd==0.3.0
+pip install notebook
+pip install openpyxl
+pip install pandas
+pip install pip install git+https://github.com/hahahellooo/mov.git@0.2/api
+pip install pyarrow
+pip install pyenv
+pip install pyenv-virtualenv
+pip install pyfiglet
+pip install streamlit
+pip install tabulate
+pip install tabulate --user
+pip install team_cmd
+pip install venv
+pip install vertualenv
+pip instll .
+pip lis
+pip list
+pip list | grep haha
+pip list | grep mov
+pip show
+pip show pandas
+pip tree
+pip uninsall hahahellooo_cmd
+pip uninsall hahahellooo_lotto
+pip uninstall hahahellooo_cmd
+pip uninstall hahahellooo_cmd hahahellooo_lotto
+pip uninstall hahahellooo_lotto
+pip uninstall hi_baechu805 hi_jeong hi_lsiwh37249
+pip uninstall mieun_mul
+pip uninstall mov
+pip uninstall team_calculate team_cmd
+pip versions
+plus
+plus()
+pmd init
+pmd install
+pmd publish
+ps
+ps -ef
+ps -ef | airflow
+ps -ef | grep airflow
+ps -ep
+pwd
+pwdfigle
+pyenv
+pyenv  versions
+pyenv --version
+pyenv -V
+pyenv -v
+pyenv global
+pyenv global  air
+pyenv global 3.11
+pyenv global 3.11.9
+pyenv global 3.11.9 note
+pyenv global 3.12.4
+pyenv global 3.9.11
+pyenv global 3.9.19
+pyenv global air
+pyenv global airs
+pyenv global eee
+pyenv global empty
+pyenv global note
+pyenv global p11
+pyenv global s11
+pyenv global versions
+pyenv install - l | grep '..3.12' 
+pyenv install - l | grep '^..3.12' | tail -n 3
+pyenv install -l
+pyenv install -l | cut -d' ' -f3 | grep '^3.'
+pyenv install -l | cut -d' ' -f3 | grep '^3.9'
+pyenv install -l | cut -d' ' -f3 | grep '^3.9' tail -n 3
+pyenv install -l | cut -d' ' -f3 | grep '^3.9' | tail -n 3
+pyenv install -l | grep '^..3.12' | tail -n 3
+pyenv install 3.11.9
+pyenv install 3.12.4
+pyenv install 3.9.19
+pyenv list
+pyenv local 3.12
+pyenv local 3.12.4
+pyenv local 3.9
+pyenv local 3.9.12
+pyenv local 3.9.19
+pyenv nersions
+pyenv shell
+pyenv shell  n11
+pyenv shell 3.11
+pyenv shell 3.11.9
+pyenv shell 3.12
+pyenv shell 3.12.4
+pyenv shell 3.9.19
+pyenv shell air
+pyenv shell jupyter notebook
+pyenv shell n11
+pyenv shell note
+pyenv shell s11
+pyenv shell t2
+pyenv status
+pyenv uninstall p11
+pyenv verion
+pyenv verions
+pyenv verions | head -n 5
+pyenv veriosn
+pyenv version
+pyenv versions
+pyenv virtualenv 3.11.9 air
+pyenv virtualenv 3.11.9 airs
+pyenv virtualenv 3.11.9 eee
+pyenv virtualenv 3.11.9 empty
+pyenv virtualenv 3.11.9 note
+pyenv virtualenv 3.11.9 p11
+pyenv virtualenv 3.11.9 s11
+pyenv virtualenv 3.11.9 t2
+pyenv virtualenv status
+pyenv virtualenv ~
+pyetest
+pyevn viersions
+pynv versions
+pytesst
+pytest
+pytest 
+pytest --cov
+pytest -s
+pytests
+pytets
+pytho n
+pythob simple_bash.py
+pythobn
+python
+python 
+python  simple_bash.py
+python -V
+python -m pip install --upgrade pip
+python -m pip install pandas
+python -v
+python arg.py
+python arg.py 1 2
+python dags/mov_summary.py
+python dags/movie.py
+python import_db.py
+python make_parquet.py
+python mov_summary.py
+python movie.py
+python simple_bash.py
+python src/haha_history/cli.py
+python src/mov/api/call.py
+python src/mov_agg/u.py
+pytset
+rem -rf *
+rm '~tmp'
+rm *
+rm *.swp
+rm -f 'history_20240711 18:44:56.log'
+rm -f history_2407111725.log
+rm -fr index.txt
+rm -r /home/hahahellooo/.oh-my-zsh
+rm -r code
+rm -r key
+rm -r mieun
+rm -r pd
+rm -r tmp
+rm -rf
+rm -rf '~tmp'
+rm -rf *
+rm -rf ./src/mov/api/call.py
+rm -rf .a.html.un\~
+rm -rf .git
+rm -rf .index.html.un\~
+rm -rf .pdm.loc
+rm -rf .pytest_cache
+rm -rf .pytest_cache pdm.lock
+rm -rf .venv
+rm -rf 1970-01-01
+rm -rf 19700101
+rm -rf 1t04 one_to_four
+rm -rf 1to4
+rm -rf 2024071*
+rm -rf Extract
+rm -rf Transform
+rm -rf _DONE
+rm -rf __init__.py
+rm -rf __pycache__ __pypackages__ 
+rm -rf airflow_dags
+rm -rf build
+rm -rf cli.py
+rm -rf csv2mysql.sh
+rm -rf csv2parquet.sh
+rm -rf dags
+rm -rf dd
+rm -rf down
+rm -rf dwon
+rm -rf eam_plus
+rm -rf git hahahellooo.github.io
+rm -rf git_test
+rm -rf hahahellooo
+rm -rf hahahellooo_cmd hahahellooo_cmd mieun_mul
+rm -rf index.html~
+rm -rf load_dt=20240724
+rm -rf make_parquet.py
+rm -rf mieun mieun_cmd
+rm -rf mijoon_cmd
+rm -rf parquet_history
+rm -rf partition_parquet
+rm -rf pdm.lock
+rm -rf pracc
+rm -rf practice_args
+rm -rf savestory
+rm -rf src/mov_agg/util.py
+rm -rf ssh.sh
+rm -rf sss_
+rm -rf t_plus
+rm -rf team_plus
+rm -rf test_call
+rm -rf wsl.conf.swo
+rm -rf zeppelin-0.11.1-bin-all
+rm .README.md.un\~
+rm .README.md.un~ README.md ferrari.html index.html~
+rm ._*
+rm ._DEPENDENCIES ._LICENSE ._NOTICE
+rm ._lib
+rm ._py4j-0.10.9.7-src.zip ._pyspark.zip
+rm ._spark-scala-2.12-0.11.1.jar
+rm ._spark-scala-2.13-0.11.1.jar
+rm ._zeppelin_ipyspark.py ._zeppelin_pyspark.py
+rm .index.html.un\~
+rm .index.txt.un\~
+rm .pdm-python pdm.lock
+rm .pytest_cache pdm.lock
+rm README.md~
+rm _HAHA
+rm _SUDDEN
+rm a.html
+rm abc.log
+rm airflow_dags
+rm b.bbb
+rm b.html
+rm be.html
+rm data/2023/01/01/data.log
+rm ferrari.html
+rm index.html
+rm index.html\~
+rm index.html~
+rm mieun
+rm parquet_history
+rm pdm.lock
+rm savehistory~
+rm src/mov_agg/util.py
+rm sudden.sh
+rm ~/.vimrc
+rm ~tmp
+rm- rf mijoon_cmd
+s
+savehistory
+scp -i k.pem ubuntu@$AWS:~/err.log.gz
+scp -i k.pem ubuntu@$AWS:~/err.log.gz .
+scp -i k.pem ~/tmp/history_log.tar.gz ubuntu@3.35.175.67:~/data/hahahellooo/
+scp -i k.pem ~/tmp/history_log.tar.gz ubuntu@3.35.1\
+scp -i samdulko.pem _HAHA ubuntu@$AWS:~/
+scp -i samdulko.pem ubuntu@$AWS:/home/ubuntu/app/hahahellooo.github.io/*.gz .
+scp -i samdulko.pem ubuntu@$AWS:/home/ubuntu/app/hahahellooo.github.io/hahellooo.log.gz .
+scp -i samdulko.pem ubuntu@$AWS:~/ _HAHA .
+scp -i samdulko.pem ubuntu@$AWS:~/_HAHA .
+scp -i samdulko.pem ubuntu@$AWS:~/err.log.gz
+scp -i samdulko.pem ubuntu@ec2-43-201-37-254.ap-northeast-2.compute.amazonaws.com:~/err.log.gz .
+scp -i samdulko.pem ~/tmp/history_log.tar.gz ubuntu@3.35.175.67:~/data/dmario24/
+scp -i samdulko.pem ~/tmp/history_log.tar.gz ubuntu@3.35.175.67:~/data/hahahellooo/
+scp -i samdulko.pem ~/tmp/history_log.tar.gz ubuntu@3.35.175.67\
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh sudden.sh
+show-banner
+show-hahahellooo
+show-lotto
+show-pic
+sl
+sls
+sourcd .venv/bin/activate
+source .venv/
+source .venv/bin/activate
+source .venv/bin/ativate
+source .zshrc
+source deactivate
+source venv create
+source ~/.zshrc
+src
+src/banner_hahahellooo/banner.py
+ssh -i samdulko.pem ubuntu@$AWS
+ssh -i samdulko.pem ubuntu@ec2-43-201-37-254.ap-northeast-2.compute.amazonaws.com
+ssh-add ~/.ssh/id_rsa_hahahellooo
+ssh-keygen -t rsa -C "hahahello777@gmail.com" -f "id_rsa_hahahellooo"
+stest
+streamlit hello
+sudo apt install figlet
+sudo apt install gcc
+sudo apt install htop
+sudo apt install libedit-dev
+sudo apt install make
+sudo apt install mysql-server
+sudo apt install openjdk-17-jdk
+sudo apt install telnet
+sudo apt install zsh
+sudo apt remove mysql-server
+sudo apt update
+sudo apt update; sudo apt install build-essential libssl-dev zlib1g-dev \\
+sudo apt update;sudo apt upgrade
+sudo cp /etc/mysql/my.cnf ~/tmp
+sudo cp csv.csv /var/lib/mysql-files
+sudo cp csv.csv /var/lib/mysql-files/
+sudo cp sudden-err.csv /var/lib/mysql-files
+sudo cp sudden.csv /var/lib/mysql-files/
+sudo cp sudden.log /var/lib/mysql-files/
+sudo cp ~/data/csv/20240717/csv.csv /var/lib/mysql-files/csv.csv
+sudo fine / -name venv-5790ba13 -d
+sudo ls /var/lib/mysql-files
+sudo ls /var/lib/mysql-files/csv.csv
+sudo mysql -u root -p mysql
+sudo pip install  virtualenv
+sudo pip3 install --upgrade pip
+sudo pip3 install virtualenv
+sudo service cron start
+sudo service mysql
+sudo service mysql restart
+sudo service mysql start
+sudo service mysql status
+sudo service mysql stop
+sudo service restart
+sudo vi /etc/mysql/my.cnf
+sudo vi /var/lib/mysql-files/csv.csv
+sudo vi my.cnf
+sudo view /var/lib/mysql-files/csv.csv
+sv.sh
+swithced to branch 'main'
+t2/test_parquet/ordered_parquet
+t_sum 1 5
+tail -f
+tail -f dag_processor_manager.log | grep hello
+tail -f hahahellooo.log
+tail -f logs/zeppelin--DESKTOP-HPO7GCU.
+tail -f logs/zeppelin--DESKTOP-HPO7GCU.log
+tail -f zeppelin--DESKTOP-HPO7GCU.log
+tail -n 1 ~/.ashrc
+tail -n 1 ~/.zshrc
+tail -n 2 history_20240712163554.log
+tail -n 3 ~/.zshrc
+tail -n 4 ~/.zshrc
+tail -n 5 count.log
+tail -n ` ~/.zshrc
+tar -cvf history_log.tar history_log
+tar -czvf history_log.tar.gz history_log
+tar -czvf zeppelin-0.11.1-bin-all.tgz
+tar -xvf spark-3.5.1-bin-hadoop3.tgz
+tar -xvf zeppelin-0.11.1-bin-all.tgz
+telnet localhost 3306
+ti tmp.sh
+tmp
+top
+toucch _DONE
+toucch _SUDDEN
+touch "haha" > data/2023/01/01/data.log
+touch "hahahellooo" > data/2023/01/01/data.log
+touch README.md
+touch _DONE
+touch _HAHA
+touch _SUDDEN
+touch __init__.py
+touch a/b/c/d//tmp.txt
+touch aws.pem
+touch test
+touch ~/tmp
+touch ~/tmp/_SUDDEN
+tree
+tree -a
+tree -a pyspark
+tree -a python
+tree -a scala-2.12
+tree -a scala-2.13
+tree done
+tree python
+tree ~/tmp/test_parquet
+tstory
+uname -a
+uniq
+vi 
+vi  makedone.sh
+vi  src/haha_args_history/cli.py
+vi  ssh.sh
+vi 'history_20240711 18:44:56.log'
+vi ../sh
+vi .git
+vi .git/config
+vi .gitignore
+vi .zshrc
+vi .zsrhc
+vi /etc/my.cnf
+vi /~.zshrc
+vi 19800101/csv.csv
+vi 20240710
+vi 20240712
+vi 20240717
+vi MACLAREN.html
+vi README.md
+vi README.md 
+vi ROYCE.html
+vi _DONE
+vi _SUDDEN
+vi _sudden.sh
+vi a.html
+vi a.txt
+vi abc.log
+vi airflow/dags/movie.py
+vi airflow/py/csv2parquet.py
+vi app.py
+vi arg.py
+vi b.bbb
+vi b.html
+vi be.html
+vi ben.html
+vi call.py
+vi check.sh
+vi chek
+vi cli.py
+vi config
+vi create_db_table.sql
+vi csv.csv
+vi csv2mysql
+vi csv2mysql.sh
+vi csv2parquet.py
+vi csv2parquet.sh
+vi dags/mov_summary.py
+vi dags/movie.py
+vi dags/movie.py 
+vi first.sh
+vi haha_args_history
+vi haha_history
+vi hahahellooo.log
+vi hello.py
+vi helloworld.py
+vi history.parquet
+vi history_
+vi history_2407111725.log
+vi im import_db.py
+vi import_db.py
+vi index.html
+vi index.txt
+vi m
+vi make
+vi make_parquet.py
+vi makedone.sh
+vi mieun.py
+vi mijoon_cmd/README.md
+vi mov_summary.py
+vi movie.py
+vi movie_e.py
+vi movie_summary.py
+vi movive.py
+vi my.cnf
+vi my_history
+vi parquet.py
+vi parquet.sh
+vi parquet_history
+vi partition_parquet
+vi pdm.lock
+vi posh.html
+vi py
+vi pypro
+vi pyproject.toml
+vi pyproject.toml 
+vi pyproject.tpml
+vi pyspark_movie.py
+vi rootdir.sh
+vi savehistory
+vi savehistory~
+vi sh.sh
+vi sidden.sh
+vi sim
+vi simple_bash.py
+vi simpleapp.py
+vi sleeptimer.sh
+vi sql
+vi src/1to4/1to4.py
+vi src/1to4/api/1to4.py
+vi src/1to4/api/_1to4_.py
+vi src/1to4/api/_1to4_.py 
+vi src/banner_hahahellooo
+vi src/banner_hahahellooo/banner.py
+vi src/dd/dd_plus.py
+vi src/extract/api/call.py
+vi src/extract/api/five_to_eight.py
+vi src/extract/api/one_to_four.py
+vi src/haha_args_history/__pycache__/
+vi src/haha_args_history/cli.py
+vi src/haha_args_history/db
+vi src/haha_args_history/db/utils.py
+vi src/haha_history
+vi src/haha_history/cli.py
+vi src/hahahellooo_cmd
+vi src/hahahellooo_cmd/cmd.py
+vi src/hahahellooo_lotto
+vi src/hahahellooo_lotto/draw.py
+vi src/hi_hahahellooo
+vi src/hi_hahahellooo/hello.py
+vi src/mieun/mieun.py
+vi src/mieun_cmd/mieun.cmd
+vi src/mieun_cmd/mieun_cmd.py
+vi src/mieun_mul/mieun_mul.py
+vi src/mijoon_cmd/cmd.py
+vi src/mov
+vi src/mov/api
+vi src/mov/api/call.py
+vi src/mov/api/call.py 
+vi src/mov/api/call.py 4
+vi src/mov/api/call.py q
+vi src/mov/cli.py
+vi src/mov_agg
+vi src/mov_agg.py
+vi src/mov_agg/u.py
+vi src/mov_agg/util.py
+vi src/my_history/cli.py
+vi src/one_to_four/api/call.py
+vi src/one_to_four/api/call.py 
+vi src/one_to_four/api/call.py \
+vi src/one_to_four/api/onetofour.py
+vi src/parquet_history/cli.py
+vi src/practice_args/cli.py
+vi src/practice_args/db/utils.py
+vi src/sss/sss.py
+vi src/t_plus/t_plus.py
+vi src/team_plus/team_plus.py
+vi src/transform/api/util.py
+vi src/transform/api/util.py 
+vi src/transform/util.py
+vi src/transform/util.py 4
+vi sre/dd/dd_plus.py
+vi ssh.sh
+vi sudden.csv
+vi sudden.sh
+vi sudden.sh 
+vi sv.sh
+vi t_plus.py
+vi team_plu
+vi team_plus
+vi team_plus.py
+vi temp2base.sql
+vi test_db.py
+vi tests
+vi tests/test.py
+vi tests/test_agg.py
+vi tests/test_call.p
+vi tests/test_call.py
+vi tests/test_call.py 
+vi tests/test_call.py2
+vi tests/test_cli.py
+vi tests/test_db.py
+vi tmp,sh
+vi tmp.sh
+vi tmp2base.sh
+vi tmp2base.sql
+vi tmp2mysql.sh
+vi variables.json
+vi zeppelin-0.11.1-bin-all.tgz
+vi zeppelin-site.xml
+vi ~./zshrc
+vi ~/.gitconfig
+vi ~/.oh-my-zsh/themes/agnoster.zsh-theme
+vi ~/.scr
+vi ~/.src
+vi ~/.ssh/config
+vi ~/.viminfo
+vi ~/.vimrc
+vi ~/.zshrc
+vi ~/airflow/dags/simple_bash.py
+vi ~/data/csv/20240710/csv.csv
+vi ~/mijoon.py
+vi. pyproject.toml
+vi. savehistory
+vi. src/haha_args_history/cli.py
+vi. zshrc
+view .git
+view .gitignore
+view .zshrc
+view MACLAREN.html
+view README.md
+view ROYCE.html
+view count.log
+view csv.csv
+view cut.log
+view dag_processor_manager.log
+view hahahellooo.github.io
+view history_20240712163554.log
+view sort.log
+view ~/.gitconfig
+vim src/extract/api/one_to_four.py
+vim test_call.py
+vim tests/test_call.py
+vim ~/.oh-my-zsh/themes/agnoster.zsh-theme
+vimtutor ko
+vis src/haha_args_history/cli.py
+vis src/haha_args_history/db/utils.py
+vis src/one_to_four/api/call.py
+vo src/mov/cli.py
+vu check.sh
+vvi src/hahahellooo_cmd/cmd.py
+wc -l cut.log
+wget https://dlcdn.apache.org/spark/spark-3.5.1/spark-3.5.1-bin-hadoop3.tgz
+wget https://dlcdn.apache.org/zeppelin/zeppelin-0.10.1/zeppelin-0.10.1-bin-netinst.tgz
+wget https://dlcdn.apache.org/zeppelin/zeppelin-0.11.1/zeppelin-0.11.1-bin-all.tgz
+which airflow
+which java
+which jps
+which pandas
+which pytest
+which python
+xd interpreter
+~
+~///app/savehistory/sv.sh
+~//app/savehistory/sv.sh
+~/Documents/textFile
+~/app
+~/app/savehistory/sv.sh
+~/err.log.gz .
+~4
+~cd
